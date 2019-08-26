@@ -1,8 +1,12 @@
 function randomLetter() {
 
-    return String.fromCharCode(97 + Math.floor(Math.random() * 26))
+    return String.fromCharCode(97 + Math.floor(Math.random() * 26));
 
 }
-for (let i = 0; i < 50; i++) {
-    console.log(randomLetter());
+let wins = 0;
+let losses = 0;
+let guesses = 9;
+While (guesses > 0) {
+    let guessedLetter = [];
+    document.onkeyup = 
 }
