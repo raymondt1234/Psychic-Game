@@ -32,18 +32,21 @@ document.onkeyup = function (event) {
             wins++;
             guesses = 9;
             computerLetter = randomLetter();
+            letters = [];
         } else if (keyPressed !== computerLetter) {
             guesses--;
             
             if (guesses === 0) {
                 losses++;
                 guesses = 9;
+                letters = [];
                 computerLetter = randomLetter();
             }
         }
     } else {
         losses++;
         guesses = 9;
+        letters = [];
         computerLetter = randomLetter();
     }
 
